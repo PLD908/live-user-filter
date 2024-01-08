@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+.live-user{
+    width: 30%;
+    margin: 50px auto;
+    box-shadow: 0 0 8px black;
+    border-radius: 8px;
+}
+.search{
+    background-color: rgb(25, 25, 254);
+    color: white;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+.search input{
+    width: 100%;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: black;
+    opacity: 0.3;
+    border: none;
+    outline: none;
+    color: white;
+}
+.card{
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+}
+.user img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.user h4{
+    font-size: 20px;
+}
+.card .user{
+    gap: 20px;
+    padding: 8px 15px;
+    height: 70px;
+}
+.hr{
+    margin-top: -10px;
+}

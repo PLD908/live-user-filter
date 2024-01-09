@@ -7,7 +7,7 @@ body{
     background-color: gray;
 }
 .live-user{
-    width: 30%;
+    width: 25%;
     margin: 50px auto;
     box-shadow: 0 0 8px black;
     border-radius: 8px;
@@ -32,6 +32,7 @@ body{
 .card{
     background-color: white;
     border-radius: 0 0 8px 8px;
+    padding-top: 10px;
 }
 .user img{
     width: 60px;
@@ -39,13 +40,10 @@ body{
     border-radius: 50%;
 }
 .user h4{
-    font-size: 20px;
+    font-size: 18px;
 }
 .card .user{
     gap: 20px;
     padding: 8px 15px;
     height: 70px;
-}
-.hr{
-    margin-top: -10px;
 }

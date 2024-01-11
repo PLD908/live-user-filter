@@ -7,15 +7,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
         users.forEach(function (profile) {
             let name = profile.querySelector('h4').textContent.trim().toLowerCase();
+            let country = profile.querySelector('p').textContent.trim().toLowerCase();
 
-            if (filterValue === '' || name.includes(filterValue)) {
-                profile.style.display = 'flex';
+            let isVisible = filterValue === '' || name.includes(filterValue) || country.includes(filterValue);
+
+            if (isVisible) {
+                profile.classList.remove('hidden');
             } else {
-                profile.style.display = 'none';
+                profile.classList.add('hidden');
             }
         });
     });
 });
+
 
 let resultElement = document.querySelector(".result")
         let buttonElement = document.querySelector(".btn")

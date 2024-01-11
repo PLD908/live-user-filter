@@ -56,3 +56,6 @@ body{
     padding: 8px 15px;
     height: 70px;
 }
+.hidden{
+    display: none;
+}

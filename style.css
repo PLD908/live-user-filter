@@ -5,6 +5,12 @@ body{
     margin: 0;
     padding: 0;
     background-color: gray;
+    font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+}
+.result {
+    font-size: 40px;
+    font-weight: 60px;
+    color: blueviolet;
 }
 .live-user{
     width: 25%;
@@ -34,15 +40,18 @@ body{
     border-radius: 0 0 8px 8px;
     padding-top: 10px;
 }
-.user img{
+.profile{
+    display: flex;
+}
+.profile img{
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
-.user h4{
+.profile h4{
     font-size: 18px;
 }
-.card .user{
+.card .profile{
     gap: 20px;
     padding: 8px 15px;
     height: 70px;

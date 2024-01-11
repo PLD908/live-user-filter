@@ -1,34 +1,27 @@
-    // let users = document.querySelectorAll('.user')
-    // let filterSearch = document.getElementById('filter');
+document.addEventListener('DOMContentLoaded', function () {
+    let users = document.querySelectorAll('.user');
+    let filterSearch = document.getElementById('filter');
 
-    // filterSearch.addEventListener('input', function() {
-    //     let filterValue = filterSearch.value.toLowerCase();
-    //     let name = profile.querySelector('h4').toLowerCase(); 
-        
-    //     users.forEach(profile, function() {
-    //             if (name.includes(filterValue)) {
-    //                 profile.style.display = "flex"
-    //             } else {
-    //                 profile.style.display = "none"
-    //             }
-    //     });
-    // });
+    filterSearch.addEventListener('input', function () {
+        let filterValue = filterSearch.value.trim().toLowerCase();
 
-const result = document.getElementById('result');
-const filter = document.getElementById('filter');
-const users = document.querySelectorAll('.user');
+        users.forEach(function (profile) {
+            let name = profile.querySelector('h4').textContent.trim().toLowerCase();
 
-filter.addEventListener("input", (e) => filterUser(e.target.value));
-
-function filterUser(searchUser) {
-    users.forEach((item) => {
-        let userName = item.querySelector('h4');
-        let profile = item.userName.querySelector('.user');
-        
-        if (userName.innerText.toLowerCase().includes(searchUser.toLowerCase())) {
-            profile.style.display = "flex"
-        } else {
-            profile.style.display = "none"
-        }
+            if (filterValue === '' || name.includes(filterValue)) {
+                profile.style.display = 'flex';
+            } else {
+                profile.style.display = 'none';
+            }
+        });
     });
-};
+});
+
+let resultElement = document.querySelector(".result")
+        let buttonElement = document.querySelector(".btn")
+        buttonElement.addEventListener('click', () => {
+            let arr = [1, 2, 3, 4, 5]
+            arr.forEach((item, index) => {
+                resultElement.innerHTML += `arr[${index}] = ${item} <br>`
+        });
+});

@@ -19,13 +19,3 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
-
-let resultElement = document.querySelector(".result")
-        let buttonElement = document.querySelector(".btn")
-        buttonElement.addEventListener('click', () => {
-            let arr = [1, 2, 3, 4, 5]
-            arr.forEach((item, index) => {
-                resultElement.innerHTML += `arr[${index}] = ${item} <br>`
-        });
-});
